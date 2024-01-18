@@ -1,0 +1,50 @@
+/* Add your previous styles here */
+
+body {
+    background-color: #f8fdfa; /* Very very pale green */
+  }
+  
+  /* Header styles */
+  header {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    background: linear-gradient(120deg, #daf5dc 0%, #e8f8ee 100%);
+    color: #333; /* Dark text color */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #d4efdf; /* Pale green background */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Slight shadow for depth */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5c946e; /* Darker green for contrast */
+    /* CSS art or gradients for the logo can be added here */
+  }
+  
+  .nav-icon {
+    color: #5c946e; /* Icon color */
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+  
+  /* Ensuring icons and collapsed items are centered properly */
+  @media (min-width: 992px) {
+    .navbar {
+      justify-content: center;
+    }
+    .navbar-collapse {
+      flex-grow: 0;
+    }
+    .navbar-icons {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+  
+  /* Add more custom styles as needed */
+  
+  
