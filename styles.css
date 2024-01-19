@@ -48,6 +48,48 @@ body {
     top: 10px;
   }
   
+/* hero section */
+  #hero {
+    background-image: url('path-to-hero-image.png'); /* Replace with the path to the downloaded hero image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    /* This is a placeholder for any artistic styling you'd like to apply */
+  }
+  
+  /* Parallax scrolling effect */
+  @media (min-width: 768px) {
+    #hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('path-to-hero-image.png'); /* Same image as the hero background */
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      will-change: transform;
+      transform: scale(1.5);
+      transition: transform 0.5s ease-out;
+    }
+    #hero:hover::after {
+      transform: scale(1);
+    }
+  }
+  
   /* Add more custom styles as needed */
   
   
