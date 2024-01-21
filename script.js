@@ -7,3 +7,4 @@ function showLogin() {
     document.getElementById('loginForm').style.display = 'block';
     document.getElementById('signupForm').style.display = 'none';
 }
+
