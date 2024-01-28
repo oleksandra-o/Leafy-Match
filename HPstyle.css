@@ -3,7 +3,22 @@
 	padding: 0;
 	box-sizing: border-box;
 }
- 
+.radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.radio-columns {
+    display: flex;
+}
+.radio-column {
+    flex: 1;
+    margin: 0 10px;
+}
+.radio-row {
+    margin-bottom: 10px;
+} 
 #navbar {
 	display: flex;
 	justify-content: center;
@@ -93,3 +108,4 @@
 	left: 0;
 	transform: none;
 }
+ 
