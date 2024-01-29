@@ -1,4 +1,50 @@
 
+/* hero section */
+#hero {
+    background-image: url('images/green.png'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px rgba(0,0,0,0.5);
+  }
+    
+  
+  /* Parallax scrolling effect */
+  @media (min-width: 768px) {
+    #hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('Images/green.png'); 
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      will-change: transform;
+      transform: scale(1.5);
+      transition: transform 0.5s ease-out;
+    }
+    #hero:hover::after {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
 body {
 	margin: 0;
 	padding: 0;
