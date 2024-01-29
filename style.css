@@ -48,6 +48,22 @@ img {
 	src: url('../fonts/lato-bold-webfont.woff') format('woff'), url('../fonts/lato-bold-webfont.ttf') format('truetype'), url('../fonts/lato-bold-webfont.svg') format('svg');
 }
 /*----------------------------------------header-styles---------------------------------------*/
+/* Header styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #header {
 	background-color: #eeebec;
 	margin: 0;
@@ -1104,4 +1120,167 @@ img {
 	color: #666;
 	line-height: 1.6;
   }
+
+  
+  /* Add your previous styles here */
+
+body {
+    background-color: #f8fdfa; 
+  }
+  
+  header {
+    font-size: 2.5rem; 
+    background: linear-gradient(120deg, #daf5dc 0%, #e8f8ee 100%);
+    color: #333; 
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #d4efdf; 
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); 
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5c946e; 
+    
+  }
+  
+  .nav-icon {
+    color: #5c946e; 
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+  
+  /* Ensuring icons and collapsed items are centered properly */
+  @media (min-width: 992px) {
+    .navbar {
+      justify-content: center;
+    }
+    .navbar-collapse {
+      flex-grow: 0;
+    }
+    
+    
+  }
+
+  .navbar-icons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+
+
+  
+/* hero section */
+  #hero {
+    background-image: url('Images/green.png'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px rgba(0,0,0,0.5);
+  }
+    
+  
+  /* Parallax scrolling effect */
+  @media (min-width: 768px) {
+    #hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('Images/green.png'); 
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      will-change: transform;
+      transform: scale(1.5);
+      transition: transform 0.5s ease-out;
+    }
+    #hero:hover::after {
+      transform: scale(1);
+    }
+  }
+
+
+
+  /* sign in page */
+
+  .login-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    margin: 10px 0;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container p {
+    text-align: center;
+}
+
+.form-container span {
+    color: #00f;
+    cursor: pointer;
+}
+
+
+  
+  
+  /* Add more custom styles as needed */
+  
   
