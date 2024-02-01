@@ -1115,6 +1115,7 @@ img {
 	overflow: hidden;
 	padding: 0;
 	width: 240px;
+	z-index: 1;
 }
 #footer div .connect a {
 	background: url(../images/icons.png) no-repeat;
