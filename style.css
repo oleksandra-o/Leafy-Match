@@ -1094,6 +1094,7 @@ img {
 	max-width: 960px;
 	overflow: hidden;
 	padding: 59px 0 13px;
+	z-index: 2;
 }
 #footer div p {
 	color: #FFFFFF;
