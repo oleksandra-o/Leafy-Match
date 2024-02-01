@@ -128,12 +128,14 @@ img {
 	margin: 0 0 0 29px;
 	padding: 0;
 	width: auto;
+	height: auto;
 }
 #header div a.logo img {
 	display: block;
 	margin: 0;
 	padding: 0;
 	width: auto;
+	height: auto;
 }
 #header div ul {
 	display: inline-block;
