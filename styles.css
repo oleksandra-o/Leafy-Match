@@ -132,4 +132,56 @@ body {
     }
   }
   
+
+
+  /*sign in */
+  .login-container {
+    max-width: 400px;
+    margin: 100px auto; /* Center the form on the page */
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Slightly rounded corners for the form */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for the form */
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    font-size: 24px; /* Larger font size for form titles */
+    color: #333; /* Dark font for contrast */
+    margin-bottom: 15px; /* Space below the form title */
+}
+
+.form-container input {
+    margin-bottom: 10px; /* Space between form fields */
+    border-radius: 5px; /* Slightly rounded corners for input fields */
+    border: 1px solid #ccc; /* Light border for the inputs */
+    padding: 10px; /* Padding inside the inputs */
+}
+
+.form-container button {
+    width: 100%; /* Make the button extend full width */
+    padding: 10px; /* Padding inside the button */
+    background-color: #28a745; /* Bootstrap 'success' green */
+    color: white; /* White text on the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.form-container button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+.form-container p {
+    text-align: center; /* Center the text within the paragraph */
+}
+
+.form-container span {
+    color: #007bff; /* Bootstrap 'primary' blue for clickable text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
   
