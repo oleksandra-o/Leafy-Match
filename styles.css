@@ -1,0 +1,135 @@
+/* Custom Styles */
+body {
+    background-color: #f8fdfa; /* Off-white background */
+  }
+  
+  header, .navbar {
+    background: linear-gradient(120deg, #daf5dc 0%, #e8f8ee 100%); /* Pale green gradient */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #333; /* Dark text for better contrast */
+  }
+  
+  .navbar-icons a {
+    color: #5c946e; /* Pale green color for icons */
+  }
+  
+  /* New Product Section */
+  #new-product h1, #new-product h2 {
+    color: #333; /* Dark grey color for titles */
+  }
+  
+  #new-product p {
+    color: #666; /* Light grey color for text */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #d4efdf; /* Pale green background for footer */
+  }
+  
+  footer p {
+    color: #daf5dc; /* Dark text for better contrast */
+  }
+  
+  footer a {
+    color: #5c946e; /* Pale green color for footer links */
+  }
+  
+  /* Responsive Image */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Parallax Effect for Hero Section */
+  #hero {
+    background: url('images/orchid-white.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Aligns vertically */
+    justify-content: center; /* Aligns horizontally */
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    color: white;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px rgba(0,0,0,0.5);
+
+    transition: font-size 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#hero:hover .hero-heading {
+    font-size: 3.5rem; /* Increase font size on hover */
+}
+
+
+  
+  /* Hero Heading Styles */
+  .hero-heading {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .hero-heading:hover {
+    transform: scale(1.1); /* Grows larger on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-icons {
+      position: static; /* Reset position for mobile */
+      margin-bottom: 1rem;
+    }
+    
+    .hero-heading {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  }
+
+
+  .section-icon {
+    font-size: 3rem; /* Larger icon size */
+    color: #4CAF50; /* Pale green color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .section-heading {
+    font-size: 1rem; /* Smaller text size */
+    color: #4CAF50; /* Off-white color */
+  }
+  
+  .section-link {
+    text-decoration: none; /* No underline on links */
+    display: block; /* Block display for spacing */
+    margin-bottom: 1rem; /* Space below icons */
+  }
+  
+  .section-link:hover .section-icon {
+    transform: scale(1.1); /* Icon grows larger on hover */
+  }
+  
+  /* Add this inside your media query for responsive sizing */
+  @media (min-width: 768px) {
+    .section-icon {
+      font-size: 4rem; /* Even larger icons on wider screens */
+    }
+  }
+  
+  

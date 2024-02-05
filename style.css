@@ -1337,3 +1337,68 @@ body {
   /* Add more custom styles as needed */
   
   
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#hero {
+    background: url('images/orchid-white.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Aligns vertically */
+    justify-content: center; /* Aligns horizontally */
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    color: white;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 5px 5px rgba(0,0,0,0.5);
+
+    transition: font-size 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#hero:hover .hero-heading {
+    font-size: 3.5rem; /* Increase font size on hover */
+}
+
+.navbar .navbar-brand {
+    color: #4CAF50;
+}
+
+.navbar .nav-link {
+    color: #4CAF50;
+}
+
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
+    color: #3e8e41;
+}
+
+.hero-heading {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#new-product h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+}
+
+#new-product p {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+}
