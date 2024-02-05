@@ -1,40 +1,40 @@
 /* Custom Styles */
 body {
-    background-color: #f8fdfa; /* Off-white background */
+    background-color: #f8fdfa; 
   }
   
   header, .navbar {
-    background: linear-gradient(120deg, #daf5dc 0%, #e8f8ee 100%); /* Pale green gradient */
+    background: linear-gradient(120deg, #daf5dc 0%, #e8f8ee 100%); 
   }
   
   .navbar-brand, .nav-link {
-    color: #333; /* Dark text for better contrast */
+    color: #333; 
   }
   
   .navbar-icons a {
-    color: #5c946e; /* Pale green color for icons */
+    color: #5c946e; 
   }
   
   /* New Product Section */
   #new-product h1, #new-product h2 {
-    color: #333; /* Dark grey color for titles */
+    color: #333; 
   }
   
   #new-product p {
-    color: #666; /* Light grey color for text */
+    color: #666; 
   }
   
   /* Footer */
   footer {
-    background-color: #d4efdf; /* Pale green background for footer */
+    background-color: #d4efdf; 
   }
   
   footer p {
-    color: #daf5dc; /* Dark text for better contrast */
+    color: #daf5dc; 
   }
   
   footer a {
-    color: #5c946e; /* Pale green color for footer links */
+    color: #5c946e; 
   }
   
   /* Responsive Image */
@@ -50,8 +50,8 @@ body {
     background-attachment: fixed;
     height: 100vh;
     display: flex;
-    align-items: center; /* Aligns vertically */
-    justify-content: center; /* Aligns horizontally */
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
 }
 
@@ -63,16 +63,16 @@ body {
     font-weight: bold;
     text-shadow: 5px 5px rgba(0,0,0,0.5);
 
-    transition: font-size 0.3s ease; /* Smooth transition for hover effect */
+    transition: font-size 0.3s ease; 
 }
 
 #hero:hover .hero-heading {
-    font-size: 3.5rem; /* Increase font size on hover */
+    font-size: 3.5rem; 
 }
 
 
   
-  /* Hero Heading Styles */
+  /* Hero Heading Styles 
   .hero-heading {
     font-size: 3rem;
     color: #fff;
@@ -87,48 +87,48 @@ body {
   }
   
   .hero-heading:hover {
-    transform: scale(1.1); /* Grows larger on hover */
+    transform: scale(1.1); 
     transition: transform 0.3s ease;
   }
   
   /* Media Query for smaller screens */
   @media (max-width: 768px) {
     .navbar-icons {
-      position: static; /* Reset position for mobile */
+      position: static; 
       margin-bottom: 1rem;
     }
     
     .hero-heading {
-      font-size: 2rem; /* Smaller font size for mobile */
+      font-size: 2rem; 
     }
   }
 
 
   .section-icon {
-    font-size: 3rem; /* Larger icon size */
-    color: #4CAF50; /* Pale green color */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 3rem; 
+    color: #4CAF50; 
+    transition: transform 0.3s ease; 
   }
   
   .section-heading {
-    font-size: 1rem; /* Smaller text size */
-    color: #4CAF50; /* Off-white color */
+    font-size: 1rem; 
+    color: #4CAF50; 
   }
   
   .section-link {
-    text-decoration: none; /* No underline on links */
-    display: block; /* Block display for spacing */
-    margin-bottom: 1rem; /* Space below icons */
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 1rem; 
   }
   
   .section-link:hover .section-icon {
-    transform: scale(1.1); /* Icon grows larger on hover */
+    transform: scale(1.1);
   }
   
   /* Add this inside your media query for responsive sizing */
   @media (min-width: 768px) {
     .section-icon {
-      font-size: 4rem; /* Even larger icons on wider screens */
+      font-size: 4rem; 
     }
   }
   
@@ -137,51 +137,51 @@ body {
   /*sign in */
   .login-container {
     max-width: 400px;
-    margin: 100px auto; /* Center the form on the page */
+    margin: 100px auto; 
     padding: 20px;
-    background-color: #fff; /* White background for the form */
-    border-radius: 8px; /* Slightly rounded corners for the form */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for the form */
-}
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  }
 
 .form-container {
     margin-bottom: 20px;
 }
 
 .form-container h2 {
-    font-size: 24px; /* Larger font size for form titles */
-    color: #333; /* Dark font for contrast */
-    margin-bottom: 15px; /* Space below the form title */
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 15px; 
 }
 
 .form-container input {
-    margin-bottom: 10px; /* Space between form fields */
-    border-radius: 5px; /* Slightly rounded corners for input fields */
-    border: 1px solid #ccc; /* Light border for the inputs */
-    padding: 10px; /* Padding inside the inputs */
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    padding: 10px; 
 }
 
 .form-container button {
-    width: 100%; /* Make the button extend full width */
-    padding: 10px; /* Padding inside the button */
-    background-color: #28a745; /* Bootstrap 'success' green */
-    color: white; /* White text on the button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Slightly rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; 
+    padding: 10px; 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 .form-container button:hover {
-    background-color: #218838; /* Slightly darker green on hover */
+    background-color: #218838; 
 }
 
 .form-container p {
-    text-align: center; /* Center the text within the paragraph */
+    text-align: center; 
 }
 
 .form-container span {
-    color: #007bff; /* Bootstrap 'primary' blue for clickable text */
-    cursor: pointer; /* Pointer cursor on hover */
+    color: #007bff; 
+    cursor: pointer; 
 }
 
   
