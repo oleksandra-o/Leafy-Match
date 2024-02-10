@@ -70,26 +70,6 @@ body {
     font-size: 3.5rem; 
 }
 
-
-  
-  /* Hero Heading Styles 
-  .hero-heading {
-    font-size: 3rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .hero-heading:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease;
-  }
   
   /* Media Query for smaller screens */
   @media (max-width: 768px) {
