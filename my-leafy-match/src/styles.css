@@ -45,7 +45,7 @@ body {
   
   /* Parallax Effect for Hero Section */
   #hero {
-    background: url('images/orchid-white.jpg') center center no-repeat;
+    background: url('/images/orchid-white.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
