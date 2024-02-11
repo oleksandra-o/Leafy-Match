@@ -37,18 +37,17 @@ body {
     color: #5c946e; 
   }
   
-  /* Responsive Image */Ç≠=
+  /* Responsive Image */
 
 
 
   .img-fluid {
     max-width: 100%;
     height: auto;
-  }
+}
   
   /* Parallax Effect for Hero Section */
   #hero {
-    /*background: url('/images/cacti-white.jpg') center center no-repeat;*/
     background: url('../public/images/orchid-white.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
