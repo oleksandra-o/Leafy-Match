@@ -1,7 +1,18 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import Footer from './Footer';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet'; // Import the Leaflet library
 import 'leaflet/dist/leaflet.css'; // Make sure you import the CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap icons CSS
+
+// Define a custom icon using Leaflet's divIcon
+const flowerIcon = L.divIcon({
+  className: 'my-custom-pin',
+  html: '<i class="bi bi-flower1" style="font-size: 2rem; color: #FF69B4;"></i>',
+  iconSize: [30, 42],
+  iconAnchor: [15, 42]
+});
 
 const Contact = () => {
   return (
@@ -11,21 +22,16 @@ const Contact = () => {
         <div className="text-center mb-4">
           <h1>Contact Us</h1>
           <p>UNIT 0123, ABC BUILDING, BUSINESS PARK</p>
-          <div>
-            <p><strong>Phone:</strong> +1 234 567 8900</p>
-            <p><strong>Email:</strong> contact@leafymatch.com</p>
-            <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
-          </div>
-          <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{ height: '450px', width: '100%' }}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[51.505, -0.09]} />
-          </MapContainer>
+          {/* Additional contact information */}
         </div>
-        {/* ... other components */}
+        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{ height: '450px', width: '100%' }}>
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={[51.505, -0.09]} icon={flowerIcon}>
+            <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
+          </Marker>
+        </MapContainer>
       </div>
-      
+      <Footer />
     </>
   );
 };
