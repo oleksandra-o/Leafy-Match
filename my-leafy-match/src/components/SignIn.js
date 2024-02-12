@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
+
 
 const SignIn = () => {
   const [isSignIn, setIsSignIn] = useState(true); // State to toggle between sign in and sign up
@@ -52,7 +52,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 };

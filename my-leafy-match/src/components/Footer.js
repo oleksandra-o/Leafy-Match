@@ -3,27 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles.css'; 
 
+
+
+
+
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light text-center py-3">
-      <div className="container p-4">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 className="text-uppercase">Connect with us</h5>
-            <a href="#" className="btn btn-primary btn-floating m-1" style={{ backgroundColor: '#3b5998' }}>
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="btn btn-primary btn-floating m-1" style={{ backgroundColor: '#55acee' }}>
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="btn btn-primary btn-floating m-1" style={{ backgroundColor: '#dd4b39' }}>
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="#" className="btn btn-primary btn-floating m-1" style={{ backgroundColor: '#ac2bac' }}>
-              <i className="fab fa-pinterest"></i>
-            </a>
-          </div>
-        </div>
+    <footer className="text-center py-4">
+      {/* Social Media Icons */}
+      <div className="social-icons mb-3">
+        <a href="https://facebook.com" className="mx-2"><i className="bi bi-facebook"></i></a>
+        <a href="https://twitter.com" className="mx-2"><i className="bi bi-twitter"></i></a>
+        <a href="https://instagram.com" className="mx-2"><i className="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com" className="mx-2"><i className="bi bi-linkedin"></i></a>
       </div>
       <p>&copy; Leafy Match - Your Plant Companion. All Rights Reserved.</p>
     </footer>
@@ -31,3 +23,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

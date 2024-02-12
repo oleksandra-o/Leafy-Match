@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar'; 
-import Footer from './Footer'; 
 import '../styles.css'; 
 
 const Home = () => {
@@ -28,7 +27,7 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <Footer />
+      
     </div>
   );
 };

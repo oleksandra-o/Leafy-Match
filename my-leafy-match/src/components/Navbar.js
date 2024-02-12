@@ -26,7 +26,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/signin"><i className="fas fa-user"></i> Sign In</Link>
             </li>
-            {/* Update this link once you have a route for the cart */}
             <li className="nav-item">
               <Link className="nav-link" to="/cart"><i className="fas fa-shopping-cart"></i> Cart</Link>
             </li>
@@ -38,5 +37,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
