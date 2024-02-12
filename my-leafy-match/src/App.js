@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import './styles.css'; // Adjust the path according to your file structure
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';

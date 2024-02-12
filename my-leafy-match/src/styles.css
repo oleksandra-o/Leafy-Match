@@ -10,6 +10,10 @@ body {
   .navbar-brand, .nav-link {
     color: #333; 
   }
+
+ .me-auto{
+  justify-content: center;
+ }
   
   .navbar-icons a {
     color: #5c946e; 
@@ -168,4 +172,11 @@ body {
     cursor: pointer; 
 }
 
-  
+
+
+/* Media query for larger screens */
+@media (min-width: 992px) {  /* Adjust the min-width as needed */
+  .navbar-nav {
+    justify-content: center !important; /* Override Bootstrap's default alignment */
+  }
+}

@@ -10,10 +10,11 @@ const NavigationBar = () => {
         <Navbar.Brand as={Link} to="/">LEAFY MATCH</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            {/* Add other Nav.Link items here */}
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="/signin"><i className="fas fa-user"></i> Sign In</Nav.Link>
