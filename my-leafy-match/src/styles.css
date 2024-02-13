@@ -172,4 +172,22 @@ body {
     cursor: pointer; 
 }
 
+/* Contact.js Popup Styles */
+.map-popup {
+  padding: 10px;
+  border-radius: 8px;
+  background: #d4efdf;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+  text-align: center;
+}
+
+.map-popup h2 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.map-popup p {
+  color: #666;
+  font-size: 14px;
+}
 

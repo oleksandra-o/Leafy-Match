@@ -25,11 +25,23 @@ const Contact = () => {
          <h1>Contact Us</h1>
          <p>UNIT 0123, ABC BUILDING, BUSINESS PARK</p>
          {/* Additional contact information */}
+         <div>
+            <p><strong>Phone:</strong> +1 234 567 8900</p>
+            <p><strong>Email:</strong> contact@leafymatch.com</p>
+            <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+          </div>
+
        </div>
        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{ height: '450px', width: '100%' }}>
          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
          <Marker position={[51.505, -0.09]} icon={flowerIcon}>
-           <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
+           <Popup>
+            <div className="map-popup">
+              <h4>Welcome to Our Store!</h4>
+              <img src="../images/cacti-white.jpg"  alt="" style={{ width: '100%', height: 'auto' }} />
+            <p>Visit us at UNIT 0123, ABC BUILDING, BUSINESS PARK.</p>
+            </div>
+           </Popup>
          </Marker>
        </MapContainer>
      </div>
