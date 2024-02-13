@@ -38,7 +38,7 @@ const Contact = () => {
            <Popup>
             <div className="map-popup">
               <h4>Welcome to Our Store!</h4>
-              <img src="../images/cacti-white.jpg"  alt="" style={{ width: '100%', height: 'auto' }} />
+              <img src="../images/pink.JPG"  alt="" style={{ width: '100%', height: 'auto' }} />
             <p>Visit us at UNIT 0123, ABC BUILDING, BUSINESS PARK.</p>
             </div>
            </Popup>
