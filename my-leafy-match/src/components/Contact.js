@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Footer from './Footer';
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet'; // Import the Leaflet library
 import 'leaflet/dist/leaflet.css'; // Make sure you import the CSS
@@ -45,7 +45,7 @@ const Contact = () => {
          </Marker>
        </MapContainer>
      </div>
-     <Footer />
+     
    </>
  );
 };
