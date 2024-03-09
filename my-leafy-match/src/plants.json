@@ -1,0 +1,196 @@
+[
+    {
+      "id": 1,
+      "name": "Aloe Vera",
+      "image": "/images/aloe-vera.jpg",
+      "description": "Soothing succulent known for its healing properties.",
+      "price": 15,
+      "light": "direct",
+      "watering": "low",
+      "humidity": "low",
+      "fertilizer": "bi-monthly"
+    },
+    {
+      "id": 2,
+      "name": "Snake Plant",
+      "image": "/images/snake-plant.jpg",
+      "description": "Hardy and easy to care for, great for beginners.",
+      "price": 20,
+      "light": "indirect",
+      "watering": "low",
+      "humidity": "low",
+      "fertilizer": "monthly"
+    },
+    {
+      "id": 3,
+      "name": "Peace Lily",
+      "image": "/images/peace-lily.jpg",
+      "description": "Elegant and purifies the air, prefers moist soil.",
+      "price": 25,
+      "light": "low",
+      "watering": "high",
+      "humidity": "high",
+      "fertilizer": "monthly"
+    },
+    {
+      "id": 4,
+      "name": "Fiddle Leaf Fig",
+      "image": "/images/fiddle-leaf-fig.jpg",
+      "description": "Fashionable with large, leathery leaves.",
+      "price": 30,
+      "light": "indirect",
+      "watering": "moderate",
+      "humidity": "medium",
+      "fertilizer": "monthly"
+    },
+    {
+      "id": 5,
+      "name": "Spider Plant",
+      "image": "/images/spider-plant.jpg",
+      "description": "Easy to grow and produces plantlets.",
+      "price": 10,
+      "light": "indirect",
+      "watering": "low",
+      "humidity": "medium",
+      "fertilizer": "bi-monthly"
+    },
+    {
+      "id": 6,
+      "name": "Rubber Plant",
+      "image": "/images/rubber-plant.jpg",
+      "description": "Large, glossy leaves that can improve air quality.",
+      "price": 35,
+      "light": "indirect",
+      "watering": "moderate",
+      "humidity": "high",
+      "fertilizer": "monthly"
+    },
+    {
+        "id": 7,
+        "name": "Monstera Deliciosa",
+        "image": "/images/monstera-deliciosa.jpg",
+        "description": "Iconic split leaves, thrives in bright, indirect light.",
+        "price": 40,
+        "light": "indirect",
+        "watering": "moderate",
+        "humidity": "high",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 8,
+        "name": "ZZ Plant",
+        "image": "/images/zz-plant.jpg",
+        "description": "Drought tolerant and thrives in low-light conditions.",
+        "price": 22,
+        "light": "low",
+        "watering": "low",
+        "humidity": "low",
+        "fertilizer": "every 3 months"
+      },
+      {
+        "id": 9,
+        "name": "Philodendron",
+        "image": "/images/philodendron.jpg",
+        "description": "Heart-shaped leaves, prefers moderate to bright indirect light.",
+        "price": 18,
+        "light": "indirect",
+        "watering": "moderate",
+        "humidity": "medium",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 10,
+        "name": "Pothos",
+        "image": "/images/pothos.jpg",
+        "description": "Vining plant, very hardy and great for beginners.",
+        "price": 15,
+        "light": "low to indirect",
+        "watering": "low",
+        "humidity": "medium",
+        "fertilizer": "bi-monthly"
+      },
+      {
+        "id": 11,
+        "name": "Jade Plant",
+        "image": "/images/jade-plant.jpg",
+        "description": "Succulent with thick, oval leaves, symbolizes good luck.",
+        "price": 25,
+        "light": "direct",
+        "watering": "low",
+        "humidity": "low",
+        "fertilizer": "every 3 months"
+      },
+      {
+        "id": 12,
+        "name": "Boston Fern",
+        "image": "/images/boston-fern.jpg",
+        "description": "Lush, feathery fronds, prefers high humidity and indirect light.",
+        "price": 30,
+        "light": "indirect",
+        "watering": "high",
+        "humidity": "high",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 13,
+        "name": "Calathea",
+        "image": "/images/calathea.jpg",
+        "description": "Ornate leaves with bold markings, does not like direct sunlight.",
+        "price": 27,
+        "light": "low",
+        "watering": "moderate",
+        "humidity": "high",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 14,
+        "name": "Bird of Paradise",
+        "image": "/images/bird-of-paradise.jpg",
+        "description": "Large, tropical leaves, can grow tall, needs bright light.",
+        "price": 50,
+        "light": "direct",
+        "watering": "moderate",
+        "humidity": "medium",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 15,
+        "name": "Anthurium",
+        "image": "/images/anthurium.jpg",
+        "description": "Glossy leaves and bright floral spathes, enjoys bright, indirect light.",
+        "price": 35,
+        "light": "indirect",
+        "watering": "low",
+        "humidity": "high",
+        "fertilizer": "bi-monthly"
+      },
+      {
+        "id": 16,
+        "name": "Orchid",
+        "image": "/images/orchid.jpg",
+        "description": "Exotic flowers, prefers bright, indirect light and high humidity.",
+        "price": 45,
+        "light": "indirect",
+        "watering": "low",
+        "humidity": "high",
+        "fertilizer": "monthly"
+      },
+      {
+        "id": 17,
+        "name": "Cactus",
+        "image": "/images/cactus.jpg",
+        "description": "Low maintenance, needs bright light and infrequent watering.",
+        "price": 20,
+        "light": "direct",
+        "watering": "low",
+        "humidity": "low",
+        "fertilizer": "every 2 months"
+      }
+]
+    
+    
+    
+    
+    
+    
+ 
