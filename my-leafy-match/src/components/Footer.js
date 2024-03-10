@@ -9,7 +9,8 @@ import '../styles.css';
 
 const Footer = () => {
   return (
-    <footer className="text-center py-4">
+    <footer className="text-center py-4  " >
+    
       {/* Social Media Icons */}
       <div className="social-icons mb-3">
         <a href="https://facebook.com" className="mx-2"><i className="bi bi-facebook"></i></a>

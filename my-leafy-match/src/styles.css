@@ -1,4 +1,7 @@
 /* Custom Styles */
+
+
+
 body {
     background-color: #f8fdfa; 
   }
@@ -190,5 +193,61 @@ body {
   color: #666;
   font-size: 14px;
 }
+/* 
+.rounded-carousel-img {
+  border-radius: 15px; 
+}
+styles.css 
+.about-section {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-carousel .carousel-item img {
+  border-radius: 20px;
+}
+
+
+.about-text {
+  flex: 0 0 33.333333%; 
+  max-width: 33.333333%; 
+}
+
+.about-carousel {
+  flex: 0 0 66.666667%;  
+  max-width: 66.666667%; Adjust the max-width as desired */
+
+  /* styles.css */
+.about{
+  padding-top: 65px;
+}
+.about-section {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item img {
+  border-radius: 15px;
+}
+
+/* To make text smaller and pictures larger, adjust the column widths */
+.text-column {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.image-column {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+
+
+
+
+
 
 
