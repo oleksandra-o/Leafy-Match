@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet'; // Import the Leaflet library
@@ -19,7 +19,7 @@ const flowerIcon = L.divIcon({
 const Contact = () => {
  return (
    <>
-     <Navbar />
+     
      <div className="container my-5">
        <div className="text-center mb-4">
          <h1>Contact Us</h1>

@@ -116,7 +116,7 @@ body {
     transform: scale(1.1);
   }
   
-  /* Add this inside your media query for responsive sizing */
+  /* responsive sizing */
   @media (min-width: 768px) {
     .section-icon {
       font-size: 4rem; 
@@ -220,6 +220,37 @@ body {
   flex: 0 0 66.66%;
   max-width: 66.66%;
 }
+
+/* plant cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.card-title {
+  height: 3rem; 
+  overflow: hidden; 
+}
+.card-text {
+  height: 5rem; 
+  overflow: hidden; 
+}
+.col-md-4 {
+  display: flex;
+}
+
+.col-md-4 .card {
+  flex-grow: 1;
+}
+
+
+/* shopping cart */
+
 
 
 

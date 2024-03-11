@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import plantsData from '../plants.json'; 
+import plantsData from '../plants.json';
 
+// Function to get unique options for filters
 const uniqueOptions = (data, key) => {
   const unique = [...new Set(data.map(item => item[key]))];
   return unique.sort();
 };
 
-const Home = () => {
+const Home = ({ setCart, cart }) => {
   const [filteredPlants, setFilteredPlants] = useState(plantsData);
   const [sortOrder, setSortOrder] = useState('');
   const [filters, setFilters] = useState({
@@ -21,6 +22,10 @@ const Home = () => {
     setFilters({ ...filters, [name]: value });
   };
 
+  const addToCart = (plant) => {
+    setCart([...cart, plant]);
+  };
+
   useEffect(() => {
     let filtered = plantsData.filter(plant => {
       return Object.keys(filters).every(key =>
@@ -28,6 +33,7 @@ const Home = () => {
       );
     });
 
+    // Sort by price
     if (sortOrder === 'lowHigh') {
       filtered.sort((a, b) => a.price - b.price);
     } else if (sortOrder === 'highLow') {
@@ -39,7 +45,8 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar cart={cart} />
+      
       <header className="hero-section">
         <section id="hero" className="d-flex align-items-center justify-content-center">
           <h1 className="hero-heading">Your personal plant advisor</h1>
@@ -65,8 +72,8 @@ const Home = () => {
       </main>
 
       <div className="container my-5">
+        {/* Filters */}
         <div className="row mb-4">
-          {/* Filters */}
           {Object.keys(filters).map((filter, index) => (
             <div className="col-md-3" key={index}>
               <div className="filter-option">
@@ -74,13 +81,12 @@ const Home = () => {
                 <select className="form-select" onChange={(e) => handleFilterChange(filter, e.target.value)}>
                   <option value="">All</option>
                   {uniqueOptions(plantsData, filter).map((option, index) => (
-                    <option value={option} key={index}>{option.replace(/-/g, ' ')}</option>
+                    <option value={option} key={index}>{option}</option>
                   ))}
                 </select>
               </div>
             </div>
           ))}
-
           {/* Sort By Price Dropdown */}
           <div className="col-md-3">
             <div className="filter-option">
@@ -93,7 +99,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         {/* Plant List */}
         <div className="row">
           {filteredPlants.map((plant) => (
@@ -104,7 +109,7 @@ const Home = () => {
                   <h5 className="card-title">{plant.name}</h5>
                   <p className="card-text">{plant.description}</p>
                   <p className="card-text"><strong>Price:</strong> ${plant.price}</p>
-                  {/* Add to Cart Button */}
+                  <button onClick={() => addToCart(plant)} className="btn btn-primary">Add to Cart</button>
                 </div>
               </div>
             </div>

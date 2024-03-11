@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 import '../styles.css';
 
 
@@ -12,7 +11,6 @@ const SignIn = () => {
 
   return (
     <>
-      <Navbar />
       <div className="container my-5">
         <div className="row">
           <div className="col-md-6 mx-auto">
