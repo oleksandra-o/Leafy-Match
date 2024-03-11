@@ -45,6 +45,10 @@ body {
     font-size: 24px; 
   }
   
+  footer a:hover{
+    color: #2f5a23; 
+    
+  }
   /* Responsive Image */
 
 
@@ -171,7 +175,7 @@ body {
 }
 
 .form-container span {
-    color: #007bff; 
+    color: #2f5a23; 
     cursor: pointer; 
 }
 
@@ -235,11 +239,15 @@ body {
 .card-title {
   height: 3rem; 
   overflow: hidden; 
+  margin-bottom: auto; 
 }
+
 .card-text {
-  height: 5rem; 
+  flex-grow: 1; 
+  margin-bottom: 1rem; /* Space above the price */
   overflow: hidden; 
 }
+
 .col-md-4 {
   display: flex;
 }
@@ -247,6 +255,23 @@ body {
 .col-md-4 .card {
   flex-grow: 1;
 }
+
+.btn-add-to-cart {
+  background-color: #459356; 
+  color: #ffffff; 
+  text-shadow: 1px 1px  #333;
+  border: none; 
+  margin-top: auto;
+  transition: background-color 0.3s ease; 
+}
+
+.btn-add-to-cart:hover, .btn-add-to-cart:focus {
+  background-color: #2f5a23; 
+  color: #ffffff; 
+}
+
+
+
 
 
 /* shopping cart */

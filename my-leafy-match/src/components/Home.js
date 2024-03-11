@@ -109,7 +109,7 @@ const Home = ({ setCart, cart }) => {
                   <h5 className="card-title">{plant.name}</h5>
                   <p className="card-text">{plant.description}</p>
                   <p className="card-text"><strong>Price:</strong> ${plant.price}</p>
-                  <button onClick={() => addToCart(plant)} className="btn btn-primary">Add to Cart</button>
+                  <button onClick={() => addToCart(plant)} className="btn btn-primary btn-add-to-cart">Add to Cart</button>
                 </div>
               </div>
             </div>
