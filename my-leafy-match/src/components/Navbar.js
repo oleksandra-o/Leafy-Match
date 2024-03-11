@@ -21,7 +21,7 @@ const NavigationBar = ({ cart }) => {
             <Nav.Link as={Link} to="/cart">
               <i className="fas fa-shopping-cart"></i>
               {cart.length > 0 && <span className="cart-item-count">{cart.length}</span>}
-              Cart
+              
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
