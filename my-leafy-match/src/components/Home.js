@@ -52,24 +52,39 @@ const Home = ({ setCart, cart }) => {
           <h1 className="hero-heading">Your personal plant advisor</h1>
         </section>
       </header>
-      <main className="main-content">
+     {/* New Product Section */}
+     <main className="main-content">
         <section className="container my-5">
-          
-          <div className="row">
-            <div className="col-12 col-md-8 mx-auto text-center">
-              <h1>NEW PRODUCT</h1>
-              <h2>Petite Petals, Grand Beauty</h2>
-              <p>Discover the charm of our Petite Orchid—a tiny wonder that brings a burst of joy and sophistication to your cozy corner. Its blossoms are a celebration of nature's understated allure. Perfect for gifting, or simply to pamper yourself.</p>
+
+          {/* New Product Heading */}
+          <div className="row mb-3">
+            <div className="col-12 text-center">
+              <h1 className="new-product-heading">NEW PRODUCT COMING SOON</h1>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12 col-md-8 mx-auto">
-              <img src="images/rose-pink.jpg" alt="Orchid" className="img-fluid" />
+
+          {/* Product and Text Section */}
+          <div className="row align-items-center">
+            {/* Image Section */}
+            <div className="col-md-6">
+              <img src="images/rose-pink.jpg" alt="Orchid" className="img-fluid rounded-3 rounded-img" />
+            </div>
+
+            {/* Text Section */}
+            <div className="col-md-6">
+              <div className="text-container bg-light rounded-3 p-4 shadow">
+                <h2>Petite Petals, Grand Beauty</h2>
+                <p>Discover the charm of our Petite Rose — a tiny wonder that brings a burst of joy and sophistication to your cozy corner. Its blossoms are a celebration of nature's understated allure. Perfect for gifting, or simply to pamper yourself.</p>
+              </div>
             </div>
           </div>
 
         </section>
       </main>
+
+
+
+
 
       <div className="container my-5">
         {/* Filters */}

@@ -270,6 +270,44 @@ body {
 }
 
 
+/* new product */
+
+.new-product-heading {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 2rem; 
+  margin-bottom: 2rem; 
+  padding: 1rem 0; 
+  border-radius: 10px; 
+  border: 1px solid #dee2e6;
+  background-color: #fffdff;
+  
+}
+
+@media (max-width: 768px) {
+ 
+  .new-product-heading {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.text-container {
+  
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.rounded-img {
+  border-radius: 15px; /* This value is adjustable based on your design preferences */
+}
+
 
 
 
