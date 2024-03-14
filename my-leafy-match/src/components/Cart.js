@@ -1,8 +1,18 @@
 import React from 'react';
 
+const TAX_RATE = 0.09; // Arizona's tax rate for example
+const SHIPPING_COST = 9.99; // Flat shipping cost
+
 const Cart = ({ cartItems }) => {
-  // Function to calculate total price
-  const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
+  // Function to calculate subtotal price
+  const subtotal = cartItems.reduce((acc, item) => acc + item.price, 0);
+
+  // Calculate tax and total
+  const tax = subtotal * TAX_RATE;
+  const total = subtotal + tax + SHIPPING_COST;
+
+  // Format the prices to two decimal places
+  const formatPrice = (price) => price.toFixed(2);
 
   return (
     <div className="container my-5">
@@ -12,17 +22,21 @@ const Cart = ({ cartItems }) => {
           <ul>
             {cartItems.map((item, index) => (
               <li key={index}>
-                {item.name} - ${item.price}
+                {item.name} - ${formatPrice(item.price)}
               </li>
             ))}
           </ul>
-          <p><strong>Total Price:</strong> ${totalPrice}</p>
+          <p><strong>Subtotal:</strong> ${formatPrice(subtotal)}</p>
+          <p><strong>Tax:</strong> ${formatPrice(tax)}</p>
+          <p><strong>Shipping Cost:</strong> ${formatPrice(SHIPPING_COST)}</p>
+          <p><strong>Total Price:</strong> ${formatPrice(total)}</p>
         </div>
       ) : (
         <p>Your cart is empty</p>
       )}
     </div>
-  );
+ 
+ );
 };
 
 export default Cart;
