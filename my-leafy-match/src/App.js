@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import Cart from './components/Cart';
+import CheckOutAsGuest from './components/CheckOutAsGuest';
 
 function App() {
   const [cart, setCart] = useState([]); // This state will track the cart items
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/guest-checkout" element={<CheckOutAsGuest />} />
         
       </Routes>
       <Footer />
