@@ -26,26 +26,29 @@ const Cart = ({ cartItems }) => {
 
   // Handle sign in
   const handleSignIn = () => {
-    navigate('/signin'); // Navigate to existing sign-in page
+    navigate('/signin'); 
   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-5 cart-container">
       <h2>Shopping Cart</h2>
       {cartItems.length > 0 ? (
         <>
-          <ul>
+          <ul className="cart-items" >
             {cartItems.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="cart-item">
                 {item.name} - ${formatPrice(item.price)}
               </li>
             ))}
           </ul>
-          <p><strong>Subtotal:</strong> ${formatPrice(subtotal)}</p>
-          <p><strong>Tax (9%):</strong> ${formatPrice(tax)}</p>
-          <p><strong>Shipping Cost:</strong> ${formatPrice(SHIPPING_COST)}</p>
-          <p><strong>Total Price:</strong> ${formatPrice(total)}</p>
-          <div className="d-flex justify-content-between">
+
+          <div className="checkout-info">
+            <p><strong>Subtotal:</strong> ${formatPrice(subtotal)}</p>
+            <p><strong>Tax (9%):</strong> ${formatPrice(tax)}</p>
+            <p><strong>Shipping Cost:</strong> ${formatPrice(SHIPPING_COST)}</p>
+            <p><strong>Total Price:</strong> ${formatPrice(total)}</p>
+          </div>
+          <div className="checkout-buttons d-flex justify-content-between">
             <button className="btn btn-outline-primary" onClick={handleGuestCheckout}>Check Out as Guest</button>
             <button className="btn btn-primary" onClick={handleSignIn}>Sign In</button>
           </div>

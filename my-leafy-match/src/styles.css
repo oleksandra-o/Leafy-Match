@@ -344,6 +344,65 @@ form {
 }
 
 
+/* Cart container */
+.cart-container {
+  max-width: 600px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart item list */
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* Checkout info */
+.checkout-info strong {
+  font-weight: 600;
+}
+
+/* Buttons */
+.cart-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+.button-spacing {
+  margin-right: 10px;
+}
+
+.btn-primary, .btn-outline-primary {
+  background-color: #5a835c; 
+  border-color: #5a835c;
+  color: white; 
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+  background-color: #426244; 
+  border-color: #426244; 
+}
+
+
+.checkout-buttons .btn {
+  margin-right: 10px; 
+}
+
+.checkout-buttons .btn:last-child {
+  margin-right: 0;
+}
+
 
 
 
