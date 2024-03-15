@@ -84,8 +84,6 @@ const Home = ({ setCart, cart }) => {
 
 
 
-
-
       <div className="container my-5">
         {/* Filters */}
         <div className="row mb-4">

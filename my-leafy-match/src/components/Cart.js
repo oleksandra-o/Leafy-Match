@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Hook to navigate
 
-const TAX_RATE = 0.09; // For example, Arizona's tax rate
+const TAX_RATE = 0.09; // Arizona's tax rate
 const SHIPPING_COST = 9.99; // Flat shipping cost
 
 const Cart = ({ cartItems }) => {
@@ -20,8 +20,8 @@ const Cart = ({ cartItems }) => {
   // Handle guest checkout
   const handleGuestCheckout = () => {
     // Navigate to a new route for guest checkout
-    // Implement the guest checkout page and logic as required
-    navigate('/guest-checkout'); // This should match your guest checkout page's route
+   
+    navigate('/guest-checkout'); 
   };
 
   // Handle sign in
